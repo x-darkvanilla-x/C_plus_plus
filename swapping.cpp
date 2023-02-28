@@ -1,26 +1,16 @@
-// Swapping with third Variable and Without Third Variable
-
 #include<iostream>
 using namespace std;
 
 int main()
 {
-	int a,b,c;
+	int a,b,temp;
 	
-	cout << "Enter two numbers : ";
-	cin >> a>>b;
+	cout << "Enter Two numbers : ";
+	cin >> a >> b;
 	
-	c = b;
+	temp = b;
 	b = a;
-	a = c;
+	a = temp;
 	
-	cout << "After Swapping : "<<a<<" "<<b;
-	
-	// method 2
-	
-	a = a+b;
-	b = a-b;
-	a = a-b;
-	
-	cout << "\nAfter Swapping Again : "<<a<<" "<<b;
+	cout << "After SWapping : "<<a<<" "<<b;
 }
